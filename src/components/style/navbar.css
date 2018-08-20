@@ -8,13 +8,12 @@
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+
+    padding: 0 1rem;
 
     border-style: none none solid none;
     border-width: 1px;
     border-color: black;
-
-    color: white;
-    background: rgba(0, 0, 0, 0.7);
 }

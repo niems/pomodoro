@@ -28,14 +28,14 @@ class TimerDisplay extends Component {
 
         this.state = {
             baseDuration: {
-                hr: 1,
-                min: 1,
-                sec: 10
+                hr: 0,
+                min: 25,
+                sec: 0
             },
             timer: {
-                hr: 1,
-                min: 1,
-                sec: 10
+                hr: 0,
+                min: 25,
+                sec: 0
             }
         };
 

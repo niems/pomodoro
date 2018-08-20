@@ -55,12 +55,12 @@ class TimerControls extends Component {
     render() {
         return (
             <div id='timer-controls-container'>
-                <span className='control-icon-container' onClick={this.onRestart}>
-                    <img className='control-icon' src='./images/repeat.svg' alt='failed to load repeat icon' />
+                <span className='icon-container timer-controls' onClick={this.onRestart}>
+                    <img className='icon-img' src='./images/repeat.svg' alt='failed to load repeat icon' />
                 </span>
 
-                <span className='control-icon-container' onClick={this.onPlayToggle}>
-                    <img className='control-icon' src={this.state.playState.path} alt='failed to load play/pause icon' />
+                <span className='icon-container timer-controls' onClick={this.onPlayToggle}>
+                    <img className='icon-img' src={this.state.playState.path} alt='failed to load play/pause icon' />
                 </span>
             </div>
         );
