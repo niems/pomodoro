@@ -1,0 +1,15 @@
+#pomodoro-container {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    
+    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: max-content 3fr 1fr;
+    grid-template-areas: 'navbar navbar'
+               'timer-display activity-list'
+               'timer-controls timer-controls';
+
+  background: #CA5B5E    
+}

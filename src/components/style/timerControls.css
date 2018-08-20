@@ -1,0 +1,49 @@
+#timer-controls-container {
+    --icon-size: 2rem;
+
+    grid-area: timer-controls;
+    box-sizing: border-box;
+    min-height: 4rem;
+    height: 4rem;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid none none none;
+    border-width: 1px;
+    border-color: black;
+
+    background: inherit;
+}
+
+.control-icon-container {
+    box-sizing: border-box;
+    display: inline-block;
+    width: max-content;
+    height:  max-content;
+
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.control-icon {
+    box-sizing: border-box;
+    display: inline-block;
+
+    padding: 0;
+    margin: 0;
+
+    max-width: 100%;
+    max-height: 100%;
+    width: var(--icon-size);
+    height: var(--icon-size);
+
+    transition: all 0.5s;
+}
+
+.control-icon:hover {
+    transform: scale(1.1, 1.1);
+}
