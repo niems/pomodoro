@@ -1,5 +1,5 @@
 #timer-display-container {
-    --timer-font-size: 2em;
+    --timer-font-size: 5em;
 
     grid-area: timer-display;
     box-sizing: border-box;
@@ -31,5 +31,6 @@
 
     font-size: var(--timer-font-size);
 
-    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
 }

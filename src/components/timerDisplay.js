@@ -76,7 +76,7 @@ class TimerDisplay extends Component {
     }
 
     update() {
-        console.log(`update() timer`);
+        //console.log(`update() timer`);
         const timer = this.state.timer;
 
         if ( timer.sec > 0 ) {
