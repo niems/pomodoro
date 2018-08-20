@@ -1,4 +1,6 @@
 #timer-display-container {
+    --timer-font-size: 2em;
+
     grid-area: timer-display;
     box-sizing: border-box;
     width: 100%;
@@ -26,6 +28,8 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+
+    font-size: var(--timer-font-size);
 
     background: rgba(0, 0, 0, 0.5);
 }
