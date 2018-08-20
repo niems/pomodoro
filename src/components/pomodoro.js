@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Navbar from './navbar';
 import TimerDisplay from './timerDisplay';
 import ActivityList from './activityList';
-import TimerControls from './timerControls';
 import './style/pomodoro.css';
 
 class Pomodoro extends Component {
@@ -28,7 +27,6 @@ class Pomodoro extends Component {
                 <Navbar />
                 <TimerDisplay />
                 <ActivityList />
-                <TimerControls />
             </div>
         );
     }
