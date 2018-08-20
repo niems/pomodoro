@@ -65,8 +65,13 @@ class TimerDisplay extends Component {
         this.destroyTimer(); //removes timer if it exists
 
         if ( hasTimerRun( this.state.baseDuration, this.state.timer ) ) { //only updates the timer if its run
-            console.log('timer has run');
-            this.setState({ timer: this.state.baseDuration }); //resets duration to the initial state
+            this.setState({ 
+                timer: { //resets duration to the initial state
+                    hr: this.state.baseDuration.hr,
+                    min: this.state.baseDuration.min,
+                    sec: this.state.baseDuration.sec
+                }
+            }); 
         }
     }
 
