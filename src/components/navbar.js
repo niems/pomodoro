@@ -9,8 +9,8 @@ class Navbar extends Component {
     render() {
         return (
             <div id='navbar-container'>
-                <span className='icon-container'>
-                    <img className='icon-img' src='./images/stopwatch.svg' alt='failed to load custom timer option' />
+                <span className='icon-container navbar'>
+                    <img className='icon-img navbar' src='./images/stopwatch.svg' alt='failed to load custom timer option' />
                 </span>
             </div>
         );

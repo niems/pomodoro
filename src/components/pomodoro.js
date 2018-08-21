@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Navbar from './navbar';
 import TimerDisplay from './timerDisplay';
 import ActivityList from './activityList';
 import './style/pomodoro.css';
@@ -24,7 +23,6 @@ class Pomodoro extends Component {
     render() {
         return (
             <div id='pomodoro-container'>
-                <Navbar />
                 <TimerDisplay />
                 <ActivityList />
             </div>

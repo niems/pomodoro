@@ -1,18 +1,24 @@
 #timer-display-container {
-    --timer-font-size: 5em;
+    --timer-font-size: calc(3.5em + (5.2 - 3.5) * ((100vw - 25em) / (75 - 25)));
 
     grid-area: timer-display;
     box-sizing: border-box;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
+
+    border-radius: 0.5rem;
+    margin: 0.25rem 0.5rem;
+    padding: 0;
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    flex: 1 auto;
+    flex: 1 55%;
 
     background: inherit;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 4px 5px black;
 }
 
 #elapsed-time {
@@ -21,7 +27,8 @@
     width: 100%;
     height: 100%;
 
-    margin: 0;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
     padding: 0;
 
     display: flex;
@@ -32,5 +39,5 @@
     font-size: var(--timer-font-size);
 
     color: white;
-    background: rgba(0, 0, 0, 0.3);
+    
 }

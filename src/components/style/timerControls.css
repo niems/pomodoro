@@ -12,9 +12,9 @@
     justify-content: center;
     align-items: center;
 
-    border-style: solid none solid none;
+    border-style: solid none none none;
     border-width: 1px;
     border-color: black;
 
-    background: inherit;
+    background: transparent;
 }

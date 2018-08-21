@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from './navbar';
 import TimerControls from './timerControls';
 import './style/timerDisplay.css';
 
@@ -9,7 +10,10 @@ function numToStr(num) {
 
 //converts the current timer obj into the timer form '00:00:00'
 function timeToStr(timer) {
-    return `${numToStr(timer.hr)}:${numToStr(timer.min)}:${numToStr(timer.sec)}`;
+    let hr = numToStr(timer.hr);
+    hr = (hr === '00') ? '' : `${hr}:`;
+    
+    return `${hr}${numToStr(timer.min)}:${numToStr(timer.sec)}`;
 }
 
 //displays timer
@@ -28,14 +32,14 @@ class TimerDisplay extends Component {
 
         this.state = {
             baseDuration: {
-                hr: 0,
-                min: 25,
-                sec: 0
+                hr: 1,
+                min: 0,
+                sec: 5
             },
             timer: {
-                hr: 0,
-                min: 25,
-                sec: 0
+                hr: 1,
+                min: 0,
+                sec: 5
             }
         };
 
@@ -100,6 +104,7 @@ class TimerDisplay extends Component {
     render() {
         return (
             <div id='timer-display-container'>
+                <Navbar />
                 <div id='elapsed-time'>
                     <DisplayElapsedTime timer={this.state.timer} />
                 </div>

@@ -1,7 +1,5 @@
 #navbar-container {
-    grid-area: navbar;
     box-sizing: border-box;
-
     min-height: 4rem;    
     height: 4rem;
     width: 100%;
@@ -11,9 +9,13 @@
     justify-content: flex-end;
     align-items: center;
 
+    border-radius: 0.5rem 0.5rem 0 0;    
     padding: 0 1rem;
+    margin: 0;
 
     border-style: none none solid none;
     border-width: 1px;
-    border-color: black;
+    border-color: white;
+
+    background: rgba(0, 0, 0, 0.3);
 }

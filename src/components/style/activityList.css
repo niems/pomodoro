@@ -1,12 +1,18 @@
+/*
 #activity-list-container {
     grid-area: activity-list;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
 
-    display: block;
     margin: 0;
     padding: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 40%;
 
     border-style: none none solid solid;
     border-width: 1px;
@@ -14,3 +20,86 @@
 
     background: inherit;
 }
+
+#activity-list-container {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background: gray;
+} 
+*/
+
+#activity-list-container {
+    box-sizing: border-box;
+    width: 95%;
+    height: 95%;
+
+    border-radius: 0.5rem;
+    margin: 0.5rem 1rem;
+    padding: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 45%;
+
+    border-style: none;
+
+    background: inherit;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 4px 5px black;
+}
+
+#activity-list {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 96%;
+    height: 95%;
+
+    border-radius: 0.5rem;
+    margin: 0;
+    padding: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgba(0, 0, 0, 0.3);
+
+}   
+
+.activity-item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+
+    margin: 10.5rem 0;
+    padding: 0.5rem 1rem;
+
+    background: var(--main-red); 
+}
+
+#activity-list-container::-webkit-scrollbar {
+    margin-left: 22px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+    background-color: var(--scrollbar);
+  }
+  
+  #activity-list-container::-webkit-scrollbar-button {
+    background-color: var(--scrollbar-btn);
+  }
+  
+  #activity-list-container::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track);
+  }
+  
+  #activity-list-container::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+  }
