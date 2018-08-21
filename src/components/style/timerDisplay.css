@@ -1,5 +1,5 @@
 #timer-display-container {
-    --timer-font-size: calc(3.5em + (5.2 - 3.5) * ((100vw - 25em) / (75 - 25)));
+    --timer-font-size: calc(4em + (6 - 4) * ((100vw - 25em) / (75 - 25)));
 
     grid-area: timer-display;
     box-sizing: border-box;
@@ -37,7 +37,8 @@
     align-items: center;
 
     font-size: var(--timer-font-size);
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 2px 2px 5px black;
 
     color: white;
-    
 }

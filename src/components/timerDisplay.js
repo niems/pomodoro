@@ -10,10 +10,11 @@ function numToStr(num) {
 
 //converts the current timer obj into the timer form '00:00:00'
 function timeToStr(timer) {
-    let hr = numToStr(timer.hr);
-    hr = (hr === '00') ? '' : `${hr}:`;
+    const hr = timer.hr === 0 ? '' : `${numToStr(timer.hr)}:`;
+    const min = timer.min === 0 ? '' : `${numToStr(timer.min)}:`;
+    const sec = timer.min === 0 ? `${numToStr(timer.sec)}s` : `${numToStr(timer.sec)}`;
     
-    return `${hr}${numToStr(timer.min)}:${numToStr(timer.sec)}`;
+    return `${hr}${min}${sec}`;
 }
 
 //displays timer
@@ -32,13 +33,13 @@ class TimerDisplay extends Component {
 
         this.state = {
             baseDuration: {
-                hr: 1,
-                min: 0,
+                hr: 0,
+                min: 1,
                 sec: 5
             },
             timer: {
-                hr: 1,
-                min: 0,
+                hr: 0,
+                min: 1,
                 sec: 5
             }
         };
